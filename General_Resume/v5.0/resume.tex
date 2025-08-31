@@ -10,34 +10,40 @@
 \usepackage{setspace}
 \usepackage{xcolor}
 \usepackage{parskip}
+\usepackage{multicol}
+\usepackage{pdfcomment}
 
 % ---------- Formatting ----------
 \pagestyle{empty}
 \setlength{\parindent}{0pt}
-\titleformat{\section}{\large\bfseries}{}{0pt}{}[\vspace{1.5pt}\titlerule]
-\setlist[itemize]{leftmargin=1.5em,itemsep=1.25pt,topsep=1pt}
+\titleformat{\section}{\large\bfseries}{}{0pt}{}[\vspace{0.5pt}\titlerule]
+\setlist[itemize]{leftmargin=1.5em,itemsep=0.2pt,topsep=0.2pt, parsep=0.2pt, topsep=2pt}
+
 
 % ---------- Document ----------
 \begin{document}
 	
 	% ===== Header =====
 	\begin{center}
+		
 		{\LARGE \textbf{Sai Abbhiram Valupadasu}}\\[6pt]
 		Hyderabad, India \,|\,
-		\href{tel:+91 9849786297}{Phone} \,|\,
+		\href{tel:+91 9849786297}{+91 9849786297} \,|\,
 		\href{mailto:valupadasusaiabbhiram@gmail.com}{Gmail} \,|\,
 		\href{https://www.linkedin.com/in/Sai-Abbhiram-Valupadasu}{LinkedIn} \,|\,
 		\href{https://github.com/ValupadasuSaiabbhiram}{GitHub} \,|\,
 		\href{https://personal-portfolio-tan-nine-78.vercel.app/}{Portfolio-Website}
+		
 	\end{center}
 	
 	% ===== Education =====
 	\section*{Education}
 	
+	
 	\textbf{B.Tech — Computer Science \& Engineering (Business Systems)} \hfill \textit{2021 -- 2024}\\
-	Vignana Bharathi Institute of Technology \hfill CGPA: 7.8 
-	\vspace{0.5em}  % adds vertical space 
-	\\ \textbf{Relevant Coursework:} Data Structures \& Algorithms, DBMS, Software Engineering, ML, AI, Web Development, Operating Systems, Computer Networks, Agile Development.
+	Vignana Bharathi Institute of Technology \,\textbar \, Hyderabad \hfill CGPA: 7.8 
+	\vspace{0.3em}  % adds vertical space 
+	\\ \textbf{Relevant Coursework:} Data Structures \& Algorithms, DBMS, Software Engineering, \pdftooltip{ML}{Machine Learning}, \pdftooltip{AI}{Artificial Intelligence}, Web Development, Operating Systems, Computer Networks, Agile Development.
 	
 	
 	% ===== Experience =====
@@ -67,7 +73,7 @@
 	% ===== Academic Projects =====
 	\section*{Academic Projects}
 	
-	\textbf{FashionX — Fashion Recommender System} \hfill \textit{Jan 2024 -- Apr 2024}
+	\textbf{FashionX \textbar \,Fashion Recommender System} \hfill \textit{Jan 2024 -- Apr 2024}
 	\begin{itemize}
 		\item Deep learning based fashion knowledge extraction using social media. Designed a recommender system Using ResNet50 for feature extraction, achieving \textbf{92\% accuracy} in similarity matching.  
 		\item Applied Nearest Neighbors (scikit-learn) for fast retrieval, cutting response time by \textbf{40\%}.  
@@ -76,7 +82,7 @@
 		\emph{Links:} \href{https://github.com/ValupadasuSaiabbhiram/FashionX}{GitHub}
 	\end{itemize}
 	
-	\textbf{Cartlytics — Market Basket Analysis (FP-Growth)} \hfill \textit{Aug 2023 -- Dec 2023}
+	\textbf{Cartlytics \textbar \,Market Basket Analysis (FP-Growth)} \hfill \textit{Aug 2023 -- Dec 2023}
 	\begin{itemize}
 		\item Built an interactive Streamlit app enabling CSV uploads and dynamic threshold tuning, reducing analysis time by \textbf{50\%}.  
 		\item Implemented FP-Growth (mlxtend) to uncover frequent itemsets and association rules, improving recommendation insights by \textbf{35\%}.  
@@ -88,13 +94,30 @@
 	% ===== Technical Skills =====
 	\section*{Technical Skills}
 	
-	\textbf{Programming Languages:} Python, Java, C, SQL, JavaScript.\\[0.25em]
-	\textbf{Web Development:} React.js, Next.js, Node.js, Express.js, HTML, CSS, Tailwind CSS, Headless UI.\\[0.25em]
-	\textbf{Mobile Development:} React Native, Expo.\\[0.25em]
-	\textbf{Databases/BaaS:} MongoDB, MySQL, Convex.\\[0.25em]
-	\textbf{AI \& ML:} TensorFlow, Keras, scikit-learn, Pandas, NumPy, NLP (NLTK, spaCy), Recommendation Systems.\\[0.25em]
-	\textbf{AI/LLM Tools:} Ollama, Hugging Face Transformers.\\[0.25em]
-	\textbf{Tools \& Platforms:} Git, GitHub, Linux, VS Code, Postman, Clerk, Nodemailer, Cheerio, Cron Jobs.\\[0.25em]
-	\textbf{Methodologies:} Agile Scrum, Object-Oriented Design, REST API Development.
+	\begin{itemize}[leftmargin=*]
+ 
+	\item \textbf{Programming Languages:} Python, Java, C, SQL, JavaScript.
+	\item \textbf{Web Development:} React.js, Next.js, Node.js, Express.js, HTML, CSS, Tailwind CSS, Headless UI.
+	\item \textbf{Mobile Development:} React Native, Expo.
+	\item \textbf{Databases/BaaS:} MongoDB, MySQL, Convex.
+	\item \textbf{AI \& ML:} TensorFlow, Keras, scikit-learn, Pandas, NumPy, NLP (NLTK, spaCy), Recommendation Systems.
+	\item \textbf{AI/LLM Tools:} Ollama, Hugging Face Transformers.
+	\item \textbf{Tools \& Platforms:} Git, GitHub, Linux, VS Code, Postman, Clerk, Nodemailer, Cheerio, Cron Jobs.
+	\item \textbf{Methodologies:} Asgile Scrum, Object-Oriented Design, REST API Development.
+	\end{itemize}
+	
+
+	% ---------- Certifications ----------
+	\section*{Certifications \hfill \small\href{https://github.com/ValupadasuSaiabbhiram/Certificates}{view all}}
+	
+	\begin{tabular}{p{0.33\linewidth} p{0.63\linewidth}}
+		\textbullet\ \textbf{Angular}\, \textbar \, Infosys Springboard & \textbullet\ \textbf{Machine Learning, NLP \& Python}\, \textbar \, Infosys Springboard \\
+		\textbullet\ \textbf{Database Foundations}\, \textbar \, Oracle  & \textbullet\ \textbf{The Complete Web Developer Course 2.0}\, \textbar \, Infosys Springboard \\
+		\textbullet\ \textbf{AWS Cloud Foundations}\, \textbar \, AWS & \textbullet\ \textbf{Cyber Security 101}\, \textbar \, TryHackMe \\
+		\textbullet\ \textbf{AWS ML Foundations}\, \textbar \, AWS & \textbullet\ \textbf{NDG Linux Unhatched}\, \textbar \, Cisco NetAcad\\
+	\end{tabular}
+	
+	
+	
 	
 \end{document}
