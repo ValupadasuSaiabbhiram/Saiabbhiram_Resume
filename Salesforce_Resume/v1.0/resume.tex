@@ -1,0 +1,125 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{fontspec}
+
+% Set Calibri as the main font
+\setmainfont{Calibri}
+
+\hypersetup{
+	colorlinks=true,
+	urlcolor=blue,
+	linkcolor=black
+}
+
+\setlist[itemize]{noitemsep, topsep=0pt, leftmargin=*}
+
+\newcommand{\link}[1]{\href{#1}{LINK}}
+
+\newcommand{\certificate}[1]{\href{#1}{CERTIFICATE}}
+
+\newcommand{\resumesection}[1]{
+	\vspace{0.2cm}
+	\hrule
+	\vspace{0.2cm}
+	\centerline{\large\textbf{#1}}
+	\vspace{0.15cm}
+}
+
+\begin{document}
+	
+	\pagenumbering{gobble}
+	
+	% Header with name, profiles, and contact info
+	\noindent
+	\begin{center}
+		\textbf{\Huge SAI ABBHIRAM VALUPADASU} \\[0.3em]
+		\href{mailto:valupadasusaiabbhiram@gmail.com}{valupadasusaiabbhiram@gmail.com} \,|\, 
+		\href{https://www.linkedin.com/in/sai-abbhiram-valupadasu/}{LinkedIn} \,|\, 
+		\href{https://github.com/ValupadasuSaiAbbhiram}{GitHub} \,|\, 
+		\href{https://saiabbhiram-portfolio.vercel.app}{Portfolio} \,|\,
+		\href{tel:+919849786297}{+91 9849786297}
+	\end{center}
+	
+	
+	\resumesection{EDUCATION}
+	
+		\noindent \textbf{Vignana Bharathi Institute of Technology}\ \hfill Hyderabad
+		\begin{itemize}
+			\item B.Tech in Computer Science \& Engineering (Business Systems) | GPA: 7.8 \textbf{\hfill 2021 -- 2024}
+		\end{itemize}
+		
+		\noindent \textbf{Central Institute of Tool Design} \hfill Hyderabad
+		\begin{itemize}
+			\item Diploma in Automation \& Robotics Engineering | GPA: 7.7 \textbf{\hfill 2019-2021}
+		\end{itemize}
+	
+	\resumesection{SKILLS SUMMARY}
+	\noindent \begin{tabularx}{\textwidth}{@{}lX@{}}
+		\textbf{Programming:} & Python, Java, SQL, C \\
+		\textbf{Salesforce:} & Apex, SOQL, Triggers, Lightning Web Components (LWC), Visualforce, Flows, Process Builder \\
+		\textbf{Frameworks/Libraries:} & Pandas, Numpy, Scikit-Learn, Matplotlib \\
+		\textbf{Databases:} & MySQL, MongoDB, SQLite \\
+		\textbf{Tools \& Platforms:} & Power BI, Tableau, Excel, PyCharm, Jupyter Notebook, VS Code, IntelliJ IDEA, Docker, AWS \\
+		\textbf{Soft Skills:} & Rapport Building, Stakeholder Management, Team Collaboration, Effective Communication \\
+	\end{tabularx}
+
+	\resumesection{EXPERIENCE}
+	
+	\noindent \textbf{INDEPENDENT SOFTWARE DEVELOPER | Hyderabad, India | \link{https://github.com/ValupadasuSaiAbbhiram} \hfill{May 2024 - Present}} 
+	\begin{itemize}
+		\item Designed and developed scalable applications integrating business logic, user experience, and modern frameworks (React.js, Node.js, Salesforce Platform).
+		\item Delivered projects including \textit{Spotlight (Real-Time Social Network)} and \textit{Netflix-Clone}, demonstrating skills in full-stack development, database design, and authentication systems.
+		\item Built and deployed cloud-ready solutions with Docker, MongoDB, and AWS services to ensure performance and scalability.
+		\item Collaborated with Agile teams, applying Scrum methodologies to deliver maintainable and efficient solutions on time.
+	\end{itemize}
+	\vspace{0.1cm}
+	\textbf{SALESFORCE VIRTUAL INTERNSHIP | SmartBridge | \link{https://www.salesforce.com/trailblazer/svalupadasu} \hfill{Oct 2023 -- Mar 2024}} 
+	\begin{itemize}
+		\item Customized Salesforce CRM by creating custom objects, workflows, and validation rules to streamline business processes.
+		\item Developed Apex classes, triggers, and SOQL queries to automate data validation and reporting tasks.
+		\item Built Lightning Web Components (LWC) for interactive dashboards and user-friendly UI enhancements.
+		\item Integrated Salesforce tools (Flows, Process Builder) to optimize automation and improve operational efficiency.
+	\end{itemize}
+	
+	
+	\resumesection{PROJECTS}
+	
+	\noindent \textbf{Cartlytics – Market Basket Analysis | \link{https://github.com/ValupadasuSaiabbhiram/Cartlytics} \hfill{Aug 2023 -- Dec 2023}}
+	\begin{itemize}
+		\item Implemented the FP-Growth algorithm to identify purchasing patterns and associations from transaction datasets.
+		\item Designed and deployed an interactive Streamlit dashboard with visualizations of support, confidence, lift, and conviction metrics.
+		\item Enabled data-driven decision making by uncovering cross-selling opportunities and actionable business insights.
+	\end{itemize}
+	\vspace{0.1cm}
+	\noindent \textbf{FashionX – Fashion Recommender System | \link{https://github.com/ValupadasuSaiAbbhiram/FashionX}\hfill{Jan 2024 - Apr 2024}} 
+	\begin{itemize}
+		\item Built a fashion recommender using ResNet50 and Nearest Neighbors to provide personalized product suggestions.
+		\item Deployed as a Dockerized Streamlit application for seamless scalability and user accessibility.
+		\item Enhanced user experience by integrating real-time recommendation updates with visual similarity search.
+	\end{itemize}
+	
+	\resumesection{CERTIFICATES}
+		\noindent \textbf{Salesforce Administrator Trailmix | \certificate{https://www.salesforce.com/trailblazer/svalupadasu} \hfill{Mar 2024}}
+		\begin{itemize}
+			\item Gained hands-on experience with Salesforce CRM including objects, workflows, validation rules, and automation tools.
+			\item Learned Salesforce security, user management, and business process customization.
+		\end{itemize}
+		
+		\noindent \textbf{Salesforce Developer Trailmix | \certificate{https://www.salesforce.com/trailblazer/svalupadasu} \hfill{Jan 2024}}
+		\begin{itemize}
+			\item Developed Apex classes, triggers, SOQL queries, and Lightning Web Components (LWC).
+			\item Built and deployed end-to-end Salesforce customizations and automation workflows.
+		\end{itemize}
+		
+		\noindent \textbf{AWS Academy Cloud Foundations | \certificate{https://github.com/ValupadasuSaiabbhiram/Certificates/blob/main/AWS_Academy_Graduate___AWS_Academy_Cloud_Foundations_Badge20230729-28-vxr2h0.pdf} \hfill{Dec 2022}} 
+		\begin{itemize}
+			\item Gained knowledge of core AWS services including EC2, S3, IAM, and VPC.
+			\item Built understanding of cloud architecture, security, and deployment.
+		\end{itemize}
+	
+	
+\end{document}
