@@ -1,0 +1,131 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{fontspec}
+
+% Set Calibri as the main font
+\setmainfont{Calibri}
+
+\hypersetup{
+	colorlinks=true,
+	urlcolor=blue,
+	linkcolor=black
+}
+
+\setlist[itemize]{noitemsep, topsep=0pt, leftmargin=*}
+
+\newcommand{\link}[1]{\href{#1}{LINK}}
+\newcommand{\certificate}[1]{\href{#1}{CERTIFICATE}}
+
+\newcommand{\resumesection}[1]{
+	\vspace{0.2cm}
+	\hrule
+	\vspace{0.2cm}
+	\centerline{\large\textbf{#1}}
+	\vspace{0.15cm}
+}
+
+\begin{document}
+	
+	\pagenumbering{gobble}
+	
+	% Header with name, profiles, and contact info
+	\noindent
+	\begin{center}
+		\textbf{\Huge SAI ABBHIRAM VALUPADASU} \\[0.3em]
+		\href{mailto:valupadasusaiabbhiram@gmail.com}{valupadasusaiabbhiram@gmail.com} \,|\, 
+		\href{https://www.linkedin.com/in/sai-abbhiram-valupadasu/}{LinkedIn} \,|\, 
+		\href{https://github.com/ValupadasuSaiAbbhiram}{GitHub} \,|\, 
+		\href{https://saiabbhiram-portfolio.vercel.app}{Portfolio} \,|\, 
+		\href{tel:+919849786297}{+91 9849786297}
+	\end{center}
+	
+	
+	\resumesection{PROFESSIONAL SUMMARY}
+	\noindent
+	Computer Science graduate with strong skills in \textbf{Python, Generative AI, and Web Development}, seeking the role of \textbf{Gen AI Developer (Fresher)} at TFG. Hands-on experience in \textbf{LLM integration, RAG pipelines, and n8n workflow automation}, with projects spanning AI chat agents, semantic search, and recommendation systems. Enthusiastic about building AI-driven applications across domains.
+	
+	
+	\resumesection{EDUCATION}
+	\noindent \textbf{Vignana Bharathi Institute of Technology}\ \hfill Hyderabad
+	\begin{itemize}
+		\item B.Tech in Computer Science \& Engineering (Business Systems) | GPA: 7.8 \textbf{\hfill 2021 -- 2024}
+	\end{itemize}
+	
+	\noindent \textbf{Central Institute of Tool Design} \hfill Hyderabad
+	\begin{itemize}
+		\item Diploma in Automation \& Robotics Engineering | GPA: 7.7 \textbf{\hfill 2019-2021}
+	\end{itemize}
+	
+	
+	\resumesection{SKILLS SUMMARY}
+	\noindent \begin{tabularx}{\textwidth}{@{}lX@{}}
+		\textbf{Programming:} & Python, C, Java, SQL, JavaScript \\
+		\textbf{AI/ML Frameworks:} & scikit-learn, TensorFlow, Keras, PyTorch, Transformers \\
+		\textbf{Generative AI \& NLP:} & LangChain, HuggingFace, OpenAI API, Ollama, Gemini \\
+		\textbf{Data Science:} & Pandas, NumPy, Matplotlib, Seaborn \\
+		\textbf{Databases:} & PostgreSQL, MongoDB, SQLite \\
+		\textbf{Automation \& Agents:} & n8n, RAG pipelines, Chat AI Agents, API Integrations \\
+		\textbf{Web Development:} & React.js, Next.js, Node.js, Express.js, HTML, CSS, Tailwind \\
+		\textbf{Tools \& Platforms:} & Git, GitHub, Docker, Streamlit, Jupyter Notebook, VS Code \\
+	\end{tabularx}
+	
+	
+	\resumesection{PROJECTS}
+	\noindent \textbf{n8n AI Chat Agent \hfill 2025} 
+	\begin{itemize}
+		\item Built an AI Chat Agent using n8n with pluggable LLMs (Ollama/OpenAI).
+		\item Implemented Postgres-backed chat memory and RAG pipelines for contextual responses.
+		\item Integrated web search and external tools for live information and actions.
+		\item Delivered a production-ready orchestration workflow with logging, retries, and memory management.
+	\end{itemize}
+	
+	\vspace{0.1cm}
+	\noindent \textbf{LibraMindAI | \link{https://github.com/ValupadasuSaiabbhiram/LibraMindAI} \hfill 2025} 
+	\begin{itemize}
+		\item Developed semantic book search and classification using ChromaDB and LangChain.
+		\item Integrated Ollama, OpenAI, and HuggingFace embeddings for flexible model support.
+		\item Processed and visualized a 6M+ book dataset for insights and discovery.
+	\end{itemize}
+	
+	\vspace{0.1cm}
+	\noindent \textbf{Cartlytics – Market Basket Analysis | \link{https://github.com/ValupadasuSaiabbhiram/Cartlytics} \hfill 2023} 
+	\begin{itemize}
+		\item Applied FP-Growth algorithm to extract association rules and identify purchase patterns.
+		\item Built an interactive Streamlit app with real-time visualization of metrics.
+	\end{itemize}
+	
+	\vspace{0.1cm}
+	\noindent \textbf{FashionX – Fashion Recommender System | \link{https://github.com/ValupadasuSaiabbhiram/FashionX} \hfill 2023} 
+	\begin{itemize}
+		\item Built a fashion recommendation engine using ResNet50 embeddings.
+		\item Deployed as a Dockerized Streamlit app with similarity search via Nearest Neighbors.
+	\end{itemize}
+	
+	
+	\resumesection{CERTIFICATIONS}
+	
+
+	
+	\noindent \textbf{AWS Academy Cloud Foundations \& Machine Learning Foundations | AWS | \certificate{https://github.com/ValupadasuSaiabbhiram/Certificates/blob/main/AWS_Academy_Graduate___AWS_Academy_Cloud_Foundations_Badge20230729-28-vxr2h0.pdf}} \hfill 2022
+	
+	\noindent \textbf{Machine Learning, NLP \& Python | Infosys Springboard | \certificate{https://github.com/ValupadasuSaiabbhiram/Certificates/blob/main/Machine\%20Learning\%2C\%20NLP\%20\%26\%20Python.pdf}} \hfill 2023
+	
+	\noindent \textbf{Salesforce Admin \& Developer Virtual Internship | SmartBridge | \certificate{https://www.salesforce.com/trailblazer/svalupadasu}} \hfill 2024
+	
+	\noindent \textbf{Cyber Security 101 | TryHackMe | \certificate{https://github.com/ValupadasuSaiabbhiram/Certificates/blob/main/Advent\%20of\%20Cyber\%202024.pdf}
+	} \hfill 2025
+	
+	
+	\resumesection{STRENGTHS}
+	\begin{itemize}
+		\item Strong foundation in Generative AI, RAG pipelines, and prompt engineering.
+		\item Hands-on experience with AI workflow orchestration using n8n.
+		\item Adaptable to new frameworks, fast learner, research-driven problem solver.
+		\item Experienced in Agile teamwork and delivering AI-backed solutions.
+	\end{itemize}
+	
+\end{document}
