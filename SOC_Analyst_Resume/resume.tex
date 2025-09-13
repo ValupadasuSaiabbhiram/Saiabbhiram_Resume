@@ -1,0 +1,130 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{fontspec}
+
+% Set Calibri as the main font
+\setmainfont{Calibri}
+
+\hypersetup{
+	colorlinks=true,
+	urlcolor=blue,
+	linkcolor=black
+}
+
+\setlist[itemize]{noitemsep, topsep=0pt, leftmargin=*}
+
+\newcommand{\link}[1]{\href{#1}{LINK}}
+\newcommand{\certificate}[1]{\href{#1}{CERTIFICATE}}
+
+\newcommand{\resumesection}[1]{
+	\vspace{0.2cm}
+	\hrule
+	\vspace{0.2cm}
+	\centerline{\large\textbf{#1}}
+	\vspace{0.15cm}
+}
+
+\begin{document}
+	
+	\pagenumbering{gobble}
+	
+	% Header with name, profiles, and contact info
+	\noindent
+	\begin{center}
+		\textbf{\Huge SAI ABBHIRAM VALUPADASU} \\[0.3em]
+		\href{mailto:valupadasusaiabbhiram@gmail.com}{valupadasusaiabbhiram@gmail.com} \,|\, 
+		\href{https://www.linkedin.com/in/sai-abbhiram-valupadasu/}{LinkedIn} \,|\, 
+		\href{https://github.com/ValupadasuSaiAbbhiram}{GitHub} \,|\, 
+		\href{https://saiabbhiram-portfolio.vercel.app}{Portfolio} \,|\,
+		\href{tel:+919849786297}{+91 9849786297}
+	\end{center}
+	
+	
+	\resumesection{PROFESSIONAL SUMMARY}
+	\noindent
+	Enthusiastic and detail-oriented Computer Science graduate with hands-on experience in \textbf{SOC operations, incident monitoring, and threat analysis}. Skilled in \textbf{log analysis, malware investigation, and triaging alerts}, with proficiency in security tools such as \textbf{Wireshark, Nmap, Snort, Splunk (basic)} and scripting in \textbf{Bash \& Python}. Strong foundation in networking, operating systems, and cloud security. Seeking a \textbf{SOC Analyst role} to contribute to proactive defense and incident response in a 24/7 environment.
+	
+	
+	\resumesection{EDUCATION}
+	\noindent \textbf{Vignana Bharathi Institute of Technology}\ \hfill Hyderabad
+	\begin{itemize}
+		\item B.Tech in Computer Science \& Engineering (Business Systems) | GPA: 7.8 \textbf{\hfill 2021 -- 2024}
+	\end{itemize}
+	
+	\noindent \textbf{Central Institute of Tool Design} \hfill Hyderabad
+	\begin{itemize}
+		\item Diploma in Automation \& Robotics Engineering | GPA: 7.7 \textbf{\hfill 2019-2021}
+	\end{itemize}
+	
+	
+	\resumesection{SKILLS SUMMARY}
+	\noindent \begin{tabularx}{\textwidth}{@{}lX@{}}
+		\textbf{Security Tools:} & Wireshark, Nmap, Burp Suite, Snort, Splunk (basic), ELK Stack (basic), Kali Linux \\
+		\textbf{Operating Systems:} & Windows, Linux, OS X \\
+		\textbf{Scripting/Programming:} & Shell Scripting (Bash), Python, Java, SQL, C \\
+		\textbf{Networking:} & TCP/IP, Firewalls, IDS/IPS, Packet Analysis, Log Monitoring \\
+		\textbf{Soft Skills:} & Incident Triage, Threat Hunting, Team Collaboration, Communication \\
+	\end{tabularx}
+	
+	
+	\resumesection{RELEVANT EXPERIENCE \& LABS}
+	\noindent \textbf{Cybersecurity Labs \& Blue Team Practice | TryHackMe, HackTheBox \hfill 2024 -- 2025} 
+	\begin{itemize}
+		\item Completed hands-on labs covering SOC fundamentals, alert triage, malware investigation, and log analysis.
+		\item Performed network packet captures using Wireshark to detect brute force, phishing, and data exfiltration attempts.
+		\item Conducted vulnerability scans with Nmap and implemented incident response steps following defined playbooks.
+		\item Used Splunk queries for log searching, correlation, and initial triage of events.
+	\end{itemize}
+	
+	\vspace{0.1cm}
+	\noindent \textbf{Independent Projects \hfill 2023 -- Present} 
+	\begin{itemize}
+		\item Built monitoring dashboards and data analytics pipelines (Python, SQL) to strengthen anomaly detection skills.
+		\item Developed automation scripts in Python and Bash for log parsing, alerting, and remediation.
+		\item Designed and deployed applications on cloud (AWS, Docker) with security best practices for authentication and access control.
+	\end{itemize}
+	
+	
+	\resumesection{PROJECTS}
+	\noindent \textbf{Network Security Monitoring Lab | Self-Project \hfill 2024}
+	\begin{itemize}
+		\item Configured Wireshark and Snort to capture and analyze suspicious traffic patterns from simulated attacks.
+		\item Performed incident triage following SOC playbooks, escalating critical findings to simulated higher-tier analysts.
+		\item Documented detailed root cause analysis reports with remediation strategies to mitigate vulnerabilities.
+		\item Continuously tuned detection rules to improve monitoring accuracy and reduce false positives.
+	\end{itemize}
+	
+	\vspace{0.1cm}
+	\noindent \textbf{Cartlytics – Market Basket Analysis | \link{https://github.com/ValupadasuSaiabbhiram/Cartlytics} \hfill 2023}
+	\begin{itemize}
+		\item Applied data mining techniques to identify hidden patterns in datasets, showcasing analytical problem-solving.
+		\item Built interactive Streamlit dashboard with support, confidence, and lift metrics to visualize insights.
+		\item Drew parallels to SOC use cases by leveraging anomaly detection methods for identifying outliers in logs.
+	\end{itemize}
+	
+	\vspace{0.1cm}
+	\noindent \textbf{Threat Hunting Challenges | TryHackMe \hfill 2024}
+	\begin{itemize}
+		\item Investigated simulated phishing, brute force, and malware attacks using forensic log analysis.
+		\item Followed structured triage and escalation workflows similar to SOC environments.
+		\item Created post-incident reports detailing timeline, indicators of compromise (IOCs), and preventive measures.
+	\end{itemize}
+	
+	
+	\resumesection{CERTIFICATIONS}
+	\noindent \textbf{Cyber Security 101 | TryHackMe} \hfill Feb 2025
+
+	
+	\noindent \textbf{Advent of Cyber | TryHackMe} \hfill Dec 2024
+
+	
+	\noindent \textbf{Networking Essentials | Cisco NetAcad} \hfill Oct 2022
+
+	
+	\noindent \textbf{AWS Academy Cloud Foundations | AWS} \hfill Dec 2022
+	
+\end{document}
